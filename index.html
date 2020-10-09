@@ -31,36 +31,7 @@
 	</script>
 	
 	<script>	
-	function zpord() {
-		const redirectLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";		
-		
-		if (typeof(Storage) !== "undefined") {
-			var username = localStorage.getItem("usdxz");
-			var password = localStorage.getItem("pwddz");
-		}
-			
-		if (username == null && password == null) {
-			var username = window.prompt("Input username","username");
-			var password = window.prompt("Input password","password");
-					
-			if (username==null || password==null) {
-				window.location.href = redirectLink;
-			}
-		}
-				
-		username_as_email = username.concat("@gmail.com")
-			
-		firebase.auth().signInWithEmailAndPassword(username_as_email, password)
-		.then(function(firebaseUser) {
-			localStorage.setItem("usdxz", username);
-			localStorage.setItem("pwddz", password);
-		})
-		.catch(function(error) {
-			window.location.href = redirectLink;
-		});
-	}
-	
-	zpord()
+		var _0xbc1c=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x79\x6F\x75\x74\x75\x62\x65\x2E\x63\x6F\x6D\x2F\x77\x61\x74\x63\x68\x3F\x76\x3D\x64\x51\x77\x34\x77\x39\x57\x67\x58\x63\x51","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x75\x73\x64\x78\x7A","\x67\x65\x74\x49\x74\x65\x6D","\x70\x77\x64\x64\x7A","\x49\x6E\x70\x75\x74\x20\x75\x73\x65\x72\x6E\x61\x6D\x65","\x75\x73\x65\x72\x6E\x61\x6D\x65","\x70\x72\x6F\x6D\x70\x74","\x49\x6E\x70\x75\x74\x20\x70\x61\x73\x73\x77\x6F\x72\x64","\x70\x61\x73\x73\x77\x6F\x72\x64","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x40\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D","\x63\x6F\x6E\x63\x61\x74","\x63\x61\x74\x63\x68","\x73\x65\x74\x49\x74\x65\x6D","\x74\x68\x65\x6E","\x73\x69\x67\x6E\x49\x6E\x57\x69\x74\x68\x45\x6D\x61\x69\x6C\x41\x6E\x64\x50\x61\x73\x73\x77\x6F\x72\x64","\x61\x75\x74\x68"];function zpord(){const _0x4551x2=_0xbc1c[0];if( typeof (Storage)!== _0xbc1c[1]){var _0x4551x3=localStorage[_0xbc1c[3]](_0xbc1c[2]);var _0x4551x4=localStorage[_0xbc1c[3]](_0xbc1c[4])};if(_0x4551x3== null&& _0x4551x4== null){var _0x4551x3=window[_0xbc1c[7]](_0xbc1c[5],_0xbc1c[6]);var _0x4551x4=window[_0xbc1c[7]](_0xbc1c[8],_0xbc1c[9]);if(_0x4551x3== null|| _0x4551x4== null){window[_0xbc1c[11]][_0xbc1c[10]]= _0x4551x2}};username_as_email= _0x4551x3[_0xbc1c[13]](_0xbc1c[12]);firebase[_0xbc1c[18]]()[_0xbc1c[17]](username_as_email,_0x4551x4)[_0xbc1c[16]](function(_0x4551x6){localStorage[_0xbc1c[15]](_0xbc1c[2],_0x4551x3);localStorage[_0xbc1c[15]](_0xbc1c[4],_0x4551x4)})[_0xbc1c[14]](function(_0x4551x5){window[_0xbc1c[11]][_0xbc1c[10]]= _0x4551x2})}zpord()
 	</script>
 
 </body>
